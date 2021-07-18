@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <section class="page__container">
+
+      <!--  Logo Section   -->
+      <div class="page-logo__container">
+        <img class="page-logo__img" src="./images/logo.svg" alt="log-icon">
+      </div>
+
+      <!--  Mobile Img   -->
+      <div class="mobile-img__container"></div>
+
+      <!--  Info Section   -->
+      <div class="page-info__container">
+        <h1 class="page-info__heading">
+          <span class="page-info__heading-primary">
+            We're
+          </span>
+          <span class="page-info__heading-secondary">
+            coming soon
+          </span>
+        </h1>
+
+        <p class="page-info__desc">
+          Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+
+        <!--  Email Section  -->
+        <div class="email__container">
+          <form class="email__form" novalidate action="javascript:void(0);">
+            <input class="email__input" type="text" placeholder="Email Address" pattern=".+@globex\.com" size="30">
+            
+            <!--  Email Icons  -->
+            <button class="email__button" id="email-button">
+              <img class="arrow-icon" src="./images/icon-arrow.svg" alt="arrow-icon">
+            </button>
+
+            <!--  Email Error Message  -->
+            <span>
+              <img class="error-icon" src="./images/icon-error.svg" alt="error-icon">
+            </span>
+            <span class="email__error">
+              Please provide a valid email
+            </span>
+          </form>
+        </div>
+        
+      </div>
+    </section>
+
+    <!--  Image Section  -->
+    <section class="img__container"></section>
+
+  </main> 
+
+  <script src="script.js"></script>
+</body>
+</html>
